@@ -9,7 +9,7 @@ CREATE TABLE department (
   department_name VARCHAR(30) NOT NULL
 );
 
-SELECT * FROM department;
+
 
 CREATE TABLE employee_role (
   id INT PRIMARY KEY,
@@ -18,14 +18,14 @@ CREATE TABLE employee_role (
   department_id INT NOT NULL
 );
 
-SELECT * FROM employee_role;
+
 
 CREATE TABLE employee (
-  id INT AUTO_INCREMENT=1001,
+  id INT AUTO_INCREMENT,
   first_name VARCHAR(30) NOT NULL,
   last_name VARCHAR(30) NOT NULL,
   role_id INT NOT NULL,
-  manager_id INT NULL
+  manager_id INT NULL,
   PRIMARY KEY (id)
 );
 
